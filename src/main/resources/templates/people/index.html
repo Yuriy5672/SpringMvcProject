@@ -6,6 +6,8 @@
 </head>
 <body>
 
+<!--Ссылка на урок https://www.youtube.com/watch?v=D58pIymCew4&list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ&index=21-->
+
 <div th:each="person : ${people}"> <!--перечисляет эллементы списка-->
     <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
 </div>
